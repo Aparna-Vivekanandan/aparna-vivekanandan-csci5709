@@ -1,0 +1,45 @@
+.myClass
+{
+    max-width: 700px;
+    margin:auto;
+    border-style: outset;
+}
+
+.myFormClass
+{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.labelname
+{
+    float: left;
+    font-size: 18px;
+    font-style: italic;
+    color: blue;
+}
+
+.errorMsg
+{
+    float: left;
+    font-size: 13px;
+    color: red;
+}
+
+.H3Class
+{
+    font-style: italic;
+    color: blue;
+}
+
+.userProfileClass
+{
+    max-width: 800px;
+    margin:auto;
+    border-style: outset;
+    font-size: 30px;
+    font-style: italic;
+    color: blue;
+}
