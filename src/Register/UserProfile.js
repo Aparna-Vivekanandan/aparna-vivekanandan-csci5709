@@ -19,10 +19,12 @@ class UserProfile extends React.Component
     {
         return (
             <div class="userProfileClass">
-                <p>User Profile</p>
-                <p>{this.state.FirstName}</p>
-                <p>{this.state.LastName}</p>
-                <p>{this.state.Email}</p>
+                <h3 class="H3Class">USER PROFILE DETAILS</h3><br/>
+                <p>FirstName: {this.state.FirstName}</p>
+                <p>LastName: {this.state.LastName}</p>
+                <p>Email: {this.state.Email}</p>
+                <br/>
+                <a href ="register">GO BACK TO REGISTRATION</a>
             </div>
         );
     }

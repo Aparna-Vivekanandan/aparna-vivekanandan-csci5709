@@ -1,15 +1,15 @@
 .myClass
 {
-    max-width: 700px;
+    max-width: 500px;
     margin:auto;
     border-style: outset;
     position: relative;
-    top: 123px
+    top: 90px
 }
 
 .myFormClass
 {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 50px;
     margin-right: 50px;
     margin-left: 50px;
@@ -34,14 +34,17 @@
 {
     font-style: italic;
     color: blue;
+    font-size: 35px;
 }
 
 .userProfileClass
 {
-    max-width: 800px;
+    max-width: 650px;
     margin:auto;
     border-style: outset;
     font-size: 30px;
     font-style: italic;
     color: blue;
+    position: relative;
+    top: 110px
 }

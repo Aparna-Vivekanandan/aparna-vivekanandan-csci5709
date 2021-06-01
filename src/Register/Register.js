@@ -95,7 +95,7 @@ class Register extends React.Component
         {
             lastNameErrorMessage = "Required Lastname";
         }
-        else if(alphaNumericValidator.match(updatedLastName))
+        else if(alphaNumericValidator.test(updatedLastName))
         {
             lastNameErrorMessage = "Lastname should be alpha-numeric"
         }
