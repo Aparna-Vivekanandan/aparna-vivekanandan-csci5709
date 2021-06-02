@@ -7,7 +7,7 @@
 * *URL*: <https://registrationform-tutorial3.herokuapp.com/register>
 
 ## Author:
-* Aparna Vivekanandan (B00870639) - ap777442@dal.ca
+* Aparna Vivekanandan (B00870639) - ap777442@dal.ca 
 
 Link to the application deployed in Heroku
 <https://registrationform-tutorial3.herokuapp.com/register>
