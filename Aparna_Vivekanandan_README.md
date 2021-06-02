@@ -13,4 +13,4 @@ Link to the application deployed in Heroku
 <https://registrationform-tutorial3.herokuapp.com/register>
 
 Git Repository link
-<https://github.com/Aparna-Vivekanandan/aparna-vivekanandan-csci5709/tree/master/src/Register>
+<https://github.com/Aparna-Vivekanandan/aparna-vivekanandan-csci5709>
