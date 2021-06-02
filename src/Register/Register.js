@@ -24,7 +24,6 @@ class Register extends React.Component
                 confirmPasswordError:'',
 
                 redirect: false,
-                canFormBeSubmitted: false
             }
         this.handleChange = this.handleChange.bind(this);
         this.handleBlur = this.handleBlur.bind(this);
@@ -43,6 +42,7 @@ class Register extends React.Component
     {
         const { name, value } = event.target;
         this.setState({[name]: value});
+        this.validateFields(name);
         return;
     }
 
@@ -77,7 +77,7 @@ class Register extends React.Component
             isFirstNameValid = true;
         }
         this.setState({firstNameError:firstNameErrorMessage})
-        console.log("Firstname: " + `${isFirstNameValid}`)
+        //console.log("Firstname: " + `${isFirstNameValid}`)
         return isFirstNameValid;
     }
 
@@ -105,7 +105,7 @@ class Register extends React.Component
             isLastNameValid = true;
         }
         this.setState({lastNameError:lastNameErrorMessage})
-        console.log("LastName: " + `${isLastNameValid}`)
+        //console.log("LastName: " + `${isLastNameValid}`)
         return isLastNameValid;
     }
 
@@ -133,7 +133,7 @@ class Register extends React.Component
             isValidEmail = true;
         }
         this.setState({emailError: emailErrorMessage})
-        console.log("email: " + `${isValidEmail}`)
+        //console.log("email: " + `${isValidEmail}`)
         return isValidEmail
     }
 
@@ -165,7 +165,7 @@ class Register extends React.Component
             isValidPassword = true;
         }
         this.setState({passwordError:passwordErrorMessage})
-        console.log("Pass: " + `${isValidPassword}`)
+        //console.log("Pass: " + `${isValidPassword}`)
         return isValidPassword
     }
 
@@ -193,7 +193,7 @@ class Register extends React.Component
             conPassErrorMessage = "Password didn't match"
         }
         this.setState({confirmPasswordError: conPassErrorMessage});
-        console.log("conPass: " + `${confirmPassValid}`)
+        //console.log("conPass: " + `${confirmPassValid}`)
         return confirmPassValid;
     }
 
@@ -265,7 +265,11 @@ class Register extends React.Component
                                    autoComplete="off"
                                    class="form-control"
                             />
-                        {(<div className="errorMsg">{this.state.firstNameError}</div>)}
+                        {(
+                            <div className="errorMsg">
+                                {this.state.firstName}
+                            </div>
+                        )}
                     </div>
 
                     <div class="form-group">
