@@ -10,7 +10,6 @@
 
 Link to the application deployed in Heroku
 
-
 Git Repository link
 
 

@@ -42,7 +42,6 @@ class Register extends React.Component
     {
         const { name, value } = event.target;
         this.setState({[name]: value});
-        this.validateFields(name);
         return;
     }
 
@@ -257,19 +256,14 @@ class Register extends React.Component
                     <h3 class="H3Class">Registration Page</h3>
                     <div class="form-group">
                         <br/> <label class="labelname">First Name</label><br/>
-                            <input type="text"
-                                   onChange={this.handleChange}
-                                   onBlur={this.handleBlur}
-                                   name="firstName"
-                                   placeholder="enter your firstname"
-                                   autoComplete="off"
-                                   class="form-control"
-                            />
-                        {(
-                            <div className="errorMsg">
-                                {this.state.firstName}
-                            </div>
-                        )}
+                        <input type="text"
+                               onChange={this.handleChange}
+                               onBlur={this.handleBlur}
+                               name="firstName"
+                               placeholder="enter your firstname"
+                               autoComplete="off"
+                               class="form-control"
+                        />{(<div className="errorMsg">{this.state.firstNameError}</div>)}
                     </div>
 
                     <div class="form-group">
